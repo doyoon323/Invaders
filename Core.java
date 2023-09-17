@@ -14,6 +14,8 @@ import screen.ScoreScreen;
 import screen.Screen;
 import screen.TitleScreen;
 
+
+
 /**
  * Implements core game logic.
  * 
@@ -89,11 +91,14 @@ public final class Core {
 			consoleHandler = new ConsoleHandler();
 			consoleHandler.setFormatter(new MinimalFormatter());
 
+			System.out.print("this is changed");
+
+
 			LOGGER.addHandler(fileHandler);
 			LOGGER.addHandler(consoleHandler);
 			LOGGER.setLevel(Level.ALL);
 
-		} catch (Exception e) {
+		} catch (Eception e) {
 			// TODO handle exception
 			e.printStackTrace();
 		}
